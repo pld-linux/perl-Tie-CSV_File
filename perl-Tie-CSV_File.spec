@@ -20,10 +20,11 @@ BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-Data-Compare
 BuildRequires:	perl-Params-Validate
 BuildRequires:	perl-Test-Exception
+BuildRequires:	perl-Test-ManyParams
 BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-Test-Warn >= 0.05
 BuildRequires:	perl-Text-CSV_XS
 BuildRequires:	perl-Tie-File
-BuildRequires:	perl-Test-Warn >= 0.05
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
