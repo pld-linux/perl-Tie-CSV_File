@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+# _without_tests - perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
@@ -8,13 +8,13 @@
 Summary:	Tie::CSV_File - ties a csv-file to an array of arrays
 Summary(pl):	Modu³ Tie::CSV_File - wi±¿±cy plik CSV z tablic± tablic
 Name:		perl-Tie-CSV_File
-Version:	0.16
+Version:	0.19
 Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-%if %{?_with_tests:1}%{!?_with_tests:0}
+%if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Data-Compare
 BuildRequires:	perl-Params-Validate
 BuildRequires:	perl-Test-Exception
@@ -49,7 +49,7 @@ linii, a @{$data[1]} oznacza kolumny z drugiej linii.
 perl Makefile.PL
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
