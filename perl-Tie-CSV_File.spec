@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
 %define	pnam	CSV_File
-Summary:	Tie::CSV_File - ties a csv-file to an array of arrays
-Summary(pl):	Modu³ Tie::CSV_File - wi±¿±cy plik CSV z tablic± tablic
+Summary:	Tie::CSV_File Perl module - ties a csv-file to an array of arrays
+Summary(pl):	Modu³ Perla Tie::CSV_File - zwi±zanie pliku CSV z tablic± tablic
 Name:		perl-Tie-CSV_File
 Version:	0.21
 Release:	1
