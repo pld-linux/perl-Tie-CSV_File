@@ -25,6 +25,7 @@ BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-Test-Warn >= 0.05
 BuildRequires:	perl-Text-CSV_XS
 BuildRequires:	perl-Tie-File
+BuildRequires:	perl-Tree-DAG_Node
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
