@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Tie
-%define	pnam	CSV_File
+%define		pdir	Tie
+%define		pnam	CSV_File
 Summary:	Tie::CSV_File Perl module - ties a csv-file to an array of arrays
 Summary(pl):	Modu³ Perla Tie::CSV_File - zwi±zanie pliku CSV z tablic± tablic
 Name:		perl-Tie-CSV_File
