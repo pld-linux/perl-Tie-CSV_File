@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
@@ -15,7 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	3a9a4a436b96a5e88538264612af3a1e
 BuildRequires:	perl-devel >= 5.6
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-Data-Compare
 BuildRequires:	perl-Params-Validate
 BuildRequires:	perl-Test-Exception
@@ -51,12 +51,13 @@ linii, a @{$data[1]} oznacza kolumny z drugiej linii.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
