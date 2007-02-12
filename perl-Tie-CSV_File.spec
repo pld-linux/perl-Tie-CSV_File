@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	CSV_File
 Summary:	Tie::CSV_File Perl module - ties a csv-file to an array of arrays
-Summary(pl):	Modu³ Perla Tie::CSV_File - zwi±zanie pliku CSV z tablic± tablic
+Summary(pl.UTF-8):   ModuÅ‚ Perla Tie::CSV_File - zwiÄ…zanie pliku CSV z tablicÄ… tablic
 Name:		perl-Tie-CSV_File
 Version:	0.21
 Release:	2
@@ -39,11 +39,11 @@ indices are starting with 0. You can also access with the normal array
 value, e.g. $data[-1][-1] stands for the last field in the last line,
 or @{$data[1]} stands for the columns of the second line.
 
-%description -l pl
-Tie::CSV_File reprezentuje zwyk³y plik CSV jako perlow± tablicê
+%description -l pl.UTF-8
+Tie::CSV_File reprezentuje zwykÅ‚y plik CSV jako perlowÄ… tablicÄ™
 tablic. Pierwszy wymiar reprezentuje numer linii w pliku, drugi wymiar
-numer kolumny. Oba indeksy zaczynaj± siê od 0. Mo¿na korzystaæ z
-w³asno¶ci tablic, np. $data[-1][-1] oznacza ostatnie pole w ostatniej
+numer kolumny. Oba indeksy zaczynajÄ… siÄ™ od 0. MoÅ¼na korzystaÄ‡ z
+wÅ‚asnoÅ›ci tablic, np. $data[-1][-1] oznacza ostatnie pole w ostatniej
 linii, a @{$data[1]} oznacza kolumny z drugiej linii.
 
 %prep
