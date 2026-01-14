@@ -8,7 +8,7 @@ Summary:	Tie::CSV_File Perl module - ties a csv-file to an array of arrays
 Summary(pl.UTF-8):	Moduł Perla Tie::CSV_File - związanie pliku CSV z tablicą tablic
 Name:		perl-Tie-CSV_File
 Version:	0.24
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
